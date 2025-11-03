@@ -5,6 +5,9 @@ int main() {
     std::cin.tie(nullptr);
     long long n;
     if (!(std::cin >> n)) return 0;
-    // TODO: compute sum 1..n (watch overflow; use 64-bit)
+
+     long long sum = n * (n + 1) / 2;
+    std::cout << sum << "\n";
+    
     return 0;
 }
