@@ -1,10 +1,16 @@
-
 #include <iostream>
+using namespace std;
+
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-    unsigned long long n;
-    if (!(std::cin >> n)) return 0;
-    // TODO: reverse using % and /, not strings
-    return 0;
+     int n;
+    cin >> n;
+
+     int cis = 0;
+
+    do {
+        cis = cis * 10 + n % 10;
+        n /= 10;
+    } while (n > 0);
+
+    cout << cis;
 }
