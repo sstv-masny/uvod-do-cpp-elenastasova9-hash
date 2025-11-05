@@ -8,7 +8,7 @@ int main() {
      int cis = 0;
 
     do {
-        cis = cis * 10 + n % 10;
+        cis = cis * 10 +n  % 10;
         n /= 10;
     } while (n > 0);
 
