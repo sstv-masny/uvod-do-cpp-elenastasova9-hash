@@ -13,4 +13,5 @@ int main() {
     } while (n > 0);
 
     cout << cis;
+    return 0;
 }
