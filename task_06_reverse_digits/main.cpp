@@ -2,13 +2,13 @@
 using namespace std;
 
 int main() {
-     int n;
+    int n;
     cin >> n;
 
-     int cis = 0;
+    int cis = 0;
 
     do {
-        cis = cis * 10 +n  % 10;
+        cis = cis * 10 + n % 10;
         n /= 10;
     } while (n > 0);
 
