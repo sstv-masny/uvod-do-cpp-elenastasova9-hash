@@ -3,10 +3,16 @@
 using namespace std;
 
 int main() {
-    int number[101] = {1, 2, 3, 4, 5};
+    int number[101] = {};
 
-    for (int cislo : number) {
-        cout << cislo << endl;
+    number[1] += 1;
+    number[2] += 1;
+    number[2] += 1;
+    number[100] += 1;
+    number[0] += 1;
+
+    for (int pocet : number) {
+        cout << pocet << " ";
     }
 
     return 0;
