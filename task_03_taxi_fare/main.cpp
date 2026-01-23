@@ -11,10 +11,12 @@ int main() {
         return 0;
 
     double suma = 4.00;
-    k = k - 2;
+    if (k > 2) {
+        k = k - 2;
 
-    for (long long i = k; i > 0; i--) {
-        suma += 1.50;
+        for (long long i = k; i > 0; i--) {
+            suma += 1.50;
+        }
     }
 
     cout << ceil(suma) << '\n'; // ceil = automaticky zaokrúhli nahor a nadol = floor
